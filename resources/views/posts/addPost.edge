@@ -1,0 +1,8 @@
+<form action="{{route('/post/addPost')}}" method="POST">
+    {{ csrfField() }}
+  <label for="fname">Post Title</label><br>
+  <input type="text" id="title" name="title" placeholder="Enter here"><br>
+  <label for="lname">Post Body</label><br>
+  <input type="text" id="body" name="body" placeholder="Enter here"><br><br>
+  <input type="submit" value="Submit">
+</form> 

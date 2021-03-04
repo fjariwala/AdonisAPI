@@ -1,0 +1,8 @@
+<form action="{{route('/post/edit/:{{post.id}}')}}" method="PUT">
+    {{ csrfField() }}
+  <label for="fname">Post Title</label><br>
+  <input type="text" id="title" name="title" value={{post.title}}  placeholder="Enter here"><br>
+  <label for="lname">Post Body</label><br>
+  <input type="text" id="body" name="body" value={{post.body}} placeholder="Enter here"><br><br>
+  <input type="submit" value="Submit">
+</form> 

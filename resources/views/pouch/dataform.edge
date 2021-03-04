@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+</head>
+<body>
+    <form action="{{route('/pouch/setData')}}" method="POST">
+        {{ csrfField() }}
+    <label for="fname">Post Title</label><br>
+    <input type="text" id="title" name="title" placeholder="Enter here"><br>
+    <label for="lname">Post Body</label><br>
+    <input type="text" id="body" name="body" placeholder="Enter here"><br><br>
+    <input type="submit" value="Submit">
+</form> 
+</body>
+</html>
